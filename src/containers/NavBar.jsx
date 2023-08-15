@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'; //Importar libreria de Styled-components 
 import BotonPaginas from './botonPagina';
+import CartWidget from '../components/CartWidget';
 
 //import cartwidget from './CartWidget';
 
@@ -20,7 +21,7 @@ function Navbar() {
                     <a onClick={handleClick} href="#h">Contacto</a>
                 </div>
                 <div className='btncarrito'>
-                    <cartwidget/>
+                    <CartWidget/>
                 </div>
                 <div className='btnhamburgesa'>
                     <BotonPaginas clicked={clicked} handleClick={handleClick}/>
