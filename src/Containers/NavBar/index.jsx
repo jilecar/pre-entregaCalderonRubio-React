@@ -3,7 +3,7 @@ import styled from 'styled-components'; //Importar libreria de Styled-components
 //import BotonPaginas from './BotonPaginas';
 //import cartwidget from './CartWidget';
 
-function navbar() {
+function Navbar() {
     const [clicked, setClicked]=useState(false) //Manipular estados
     const handleClick=()=>{//Funcion para cuando hacemos clic al boton del munÃº cambie el estado
         setClicked(!clicked) //cuando esta true lo pasa a false y viceversa
@@ -29,7 +29,7 @@ function navbar() {
         </>
     )
 }
-export default navbar
+export default Navbar
 
 //Estilos tipo scss
 const NavbarContenedor = styled.nav`
