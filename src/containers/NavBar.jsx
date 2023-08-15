@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components'; //Importar libreria de Styled-components 
-//import BotonPaginas from './BotonPaginas';
+import BotonPaginas from './botonPagina';
+
 //import cartwidget from './CartWidget';
 
 function Navbar() {
