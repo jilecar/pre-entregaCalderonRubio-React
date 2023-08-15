@@ -5,4 +5,4 @@ export const Cartwidget=()=>{
         <i className="bi bi-cart-plus-fill"></i>
     );
 }
-export default Cartwidget
+export default Cartwidget;

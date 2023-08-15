@@ -22,6 +22,7 @@ function Navbar() {
                 </div>
                 <div className='btncarrito'>
                     <CartWidget/>
+                    <span className='etqnumero'>0</span>
                 </div>
                 <div className='btnhamburgesa'>
                     <BotonPaginas clicked={clicked} handleClick={handleClick}/>
@@ -102,8 +103,15 @@ a{
 }
 
 .btncarrito{
-    width: 760px;
+    position: center;
     color: white;
+    width: 4rem;
+}
+
+.etqnumero{
+    font-size: blod;
+    left: 10px;
+    margin-left: 5px;
 }
 
 //media query para mostrar/ocultar el boton del menu hambuerguesa
