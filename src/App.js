@@ -5,6 +5,7 @@ import Navbar from './containers/NavBar';
 function App() {
   return (
     <>
+    
     <Navbar/>
     </>
   );

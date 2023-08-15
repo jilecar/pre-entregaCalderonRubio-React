@@ -2,15 +2,15 @@ import React from 'react';
 import styled from 'styled-components'; //Importar libreria de Styled-components 
 
 function BotonPaginas(props) {
-    return (
-        <Hamburgesa>
-            <div onClick={props.handleClick} className={`icon nav-icon-5 ${props.clicked ? 'open':''}`}>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </Hamburgesa>
-    )
+  return (
+    <Hamburgesa>
+      <div onClick={props.handleClick} className={`icon nav-icon-5 ${props.clicked ? 'open' : ''}`}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </Hamburgesa>
+  )
 }
 export default BotonPaginas
 //Estilos para el boton tipo hamburgesa

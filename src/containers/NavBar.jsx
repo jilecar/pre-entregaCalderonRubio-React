@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components'; //Importar libreria de Styled-components 
 import BotonPaginas from './botonPagina';
 import CartWidget from '../components/CartWidget';
@@ -6,26 +6,26 @@ import CartWidget from '../components/CartWidget';
 //import cartwidget from './CartWidget';
 
 function Navbar() {
-    const [clicked, setClicked]=useState(false) //Manipular estados
-    const handleClick=()=>{//Funcion para cuando hacemos clic al boton del munÃº cambie el estado
+    const [clicked, setClicked] = useState(false) //Manipular estados
+    const handleClick = () => {//Funcion para cuando hacemos clic al boton del munÃº cambie el estado
         setClicked(!clicked) //cuando esta true lo pasa a false y viceversa
     }
     return (
         <>
             <NavbarContenedor>
                 <h1>Almacen <span>Productos</span></h1>
-                <div className={`links ${clicked ?'active':''} `}>
-                    <a onClick={handleClick} href="#h">Inicio</a>
-                    <a onClick={handleClick} href="#h">Nosotros</a>
-                    <a onClick={handleClick} href="#h">Productos</a>
-                    <a onClick={handleClick} href="#h">Contacto</a>
+                <div className={`links ${clicked ? 'active' : ''} `}>
+                    <a onClick={handleClick} href="#h">Hogar</a>
+                    <a onClick={handleClick} href="#h">Tecnología</a>
+                    <a onClick={handleClick} href="#h">Oficina</a>
+                    <a onClick={handleClick} href="#h">Maquinaria</a>
                 </div>
                 <div className='btncarrito'>
-                    <CartWidget/>
+                    <CartWidget />
                     <span className='etqnumero'>0</span>
                 </div>
                 <div className='btnhamburgesa'>
-                    <BotonPaginas clicked={clicked} handleClick={handleClick}/>
+                    <BotonPaginas clicked={clicked} handleClick={handleClick} />
                 </div>
                 <BgDiv className={`initial ${clicked ? 'active' : ''}`}></BgDiv> {/*background circular para la animacion*/}
             </NavbarContenedor>
@@ -120,7 +120,7 @@ a{
     display: none; }
 }
 `
-const BgDiv =styled.div`
+const BgDiv = styled.div`
 background-color: black;
 position: absolute;
 top: -700px;
