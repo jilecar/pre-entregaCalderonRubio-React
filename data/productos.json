@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "nombre": "Mesa Para Tv",
+        "precio": 192900,
+        "imagen": "mesatv.webp",
+        "categoria": "Hogar",
+        "descripcion": "Mesa Para Tv Tunez Wengue"
+    },
+    {
+        "id": 2,
+        "nombre": "Camara Sony Alpha",
+        "precio": 4236219,
+        "imagen": "camarasonyalpha.webp",
+        "categoria": "Tecnologia",
+        "descripcion": "Kit ZV-E10 + lente 16-50mm f/3.5-5.6 OSS ILCZVE10L sin espejo color negro"
+    },
+    {
+        "id": 3,
+        "nombre": "Apple Macbook Air",
+        "precio": 4030000,
+        "imagen": "applemacbookair.webp",
+        "categoria": "Tencologia",
+        "descripcion": "13.3 Chip M1 8 Core Cpu 256gb Ssd 8gb Ram Color Silver"
+    },
+    {
+        "id": 4,
+        "nombre": "Silla De Escritorio",
+        "precio": 211582,
+        "imagen": "sillaofina.webp",
+        "categoria": "Oficina",
+        "descripcion": "Silla De Escritorio Y Oficina Ergonomica Pc Giratoria Femmto"
+    },
+    {
+        "id": 5,
+        "nombre": "Bicicleta estática",
+        "precio": 732450,
+        "imagen": "biciestatica.webp",
+        "categoria": "Deportes",
+        "descripcion": "Bicicleta estática Corleone Spinbike Estática para spinning color negro y azul"
+    },
+    {
+        "id": 6,
+        "nombre": "Kit De Pesas ",
+        "precio": 112900,
+        "imagen": "kitpesas.webp",
+        "categoria": "Deportes",
+        "descripcion": "Kit De Pesas Ejercicio Mancuernas Juego De Pesas Termoforrad"
+    },
+    {
+        "id": 7,
+        "nombre": "Sofa Cama",
+        "precio": 999900,
+        "imagen": "sofa.webp",
+        "categoria": "Hogar",
+        "descripcion": "Sofa Cama Style Gris Kaiu Home"
+    },
+    {
+        "id": 8,
+        "nombre": "Archivador",
+        "precio": 930000,
+        "imagen": "archivador.webp",
+        "categoria": "Oficina",
+        "descripcion": "Archivador 4 Gavetas Metalico"
+    },
+    {
+        "id": 9,
+        "nombre": "Control Para Xbox 360",
+        "precio": 58900,
+        "imagen": "controlxbox.webp",
+        "categoria": "Tecnologia",
+        "descripcion": "Control Para Xbox 360 Y Pc Alambrico Blanco Nuevo"
+    }
+]

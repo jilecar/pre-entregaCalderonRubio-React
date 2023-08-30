@@ -10,6 +10,7 @@ export default function Router(){
         <Navbar/>
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
+          {/*Busqueda de categorias por id */}
           <Route path="/categoria/:id" element={<ItemListContainer/>}/>
         </Routes>
         </BrowserRouter>

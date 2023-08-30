@@ -19,7 +19,7 @@ function Navbar() {
                     <Link to='categoria/Hogar'>Hogar</Link>
                     <Link to='categoria/Tecnología'>Tecnología</Link>
                     <Link to='categoria/Oficina'>Oficina</Link>
-                    <Link to='categoria/Maquinaria'>Maquinaria</Link>
+                    <Link to='categoria/Deportes'>Deportes</Link>
                 </div>
                 <div className='btncarrito'>
                     <CartWidget />
