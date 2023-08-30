@@ -10,7 +10,7 @@ export default function Router(){
         <Navbar/>
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
-          {/*<Route path="users/*" element={<Users/>}/>*/}
+          <Route path="/categoria/:id" element={<ItemListContainer/>}/>
         </Routes>
         </BrowserRouter>
     )

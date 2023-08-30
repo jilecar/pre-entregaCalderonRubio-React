@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import styled from 'styled-components'; //Importar libreria de Styled-components 
 import BotonPaginas from './botonPagina';
@@ -15,10 +16,10 @@ function Navbar() {
             <NavbarContenedor>
                 <h1>Almacen <span>Productos</span></h1>
                 <div className={`links ${clicked ? 'active' : ''} `}>
-                    <a onClick={handleClick} href="#h">Hogar</a>
-                    <a onClick={handleClick} href="#h">Tecnología</a>
-                    <a onClick={handleClick} href="#h">Oficina</a>
-                    <a onClick={handleClick} href="#h">Maquinaria</a>
+                    <Link to='categoria/Hogar'>Hogar</Link>
+                    <Link to='categoria/Tecnología'>Tecnología</Link>
+                    <Link to='categoria/Oficina'>Oficina</Link>
+                    <Link to='categoria/Maquinaria'>Maquinaria</Link>
                 </div>
                 <div className='btncarrito'>
                     <CartWidget />
