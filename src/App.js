@@ -1,15 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/NavBar';
-import ItemListContainer from './components/ItemListContainer';
-
+import Router from "./router/Router";
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <ItemListContainer greeting="Bienvenido a Almacén"/>
-    </>
-  );
+  return <Router/>
 }
 export default App;
