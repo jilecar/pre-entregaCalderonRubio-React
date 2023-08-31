@@ -12,7 +12,7 @@
         "id": 2,
         "nombre": "Camara Sony Alpha",
         "precio": 4236219,
-        "imagen": "camarasonyalpha.webp",
+        "imagen": "../img/camarasonyalpha.webp",
         "categoria": "Tecnologia",
         "descripcion": "Kit ZV-E10 + lente 16-50mm f/3.5-5.6 OSS ILCZVE10L sin espejo color negro"
     },

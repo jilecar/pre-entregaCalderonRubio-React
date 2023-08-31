@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <>
             <NavbarContenedor>
-                <h1>Almacen <span>Productos</span></h1>
+                <Link to='/'className='inicio'>Almacen <span>Productos</span></Link>
                 <div className={`links ${clicked ? 'active' : ''} `}>
                     <Link to='categoria/Hogar'>Hogar</Link>
                     <Link to='categoria/Tecnologia'>Tecnologia</Link>
@@ -37,9 +37,9 @@ export default Navbar
 
 //Estilos tipo scss
 const NavbarContenedor = styled.nav`
-h1{ //estilos titulo
+.inicio{ //estilos titulo
     color: white;
-    font-weight: 200;
+    font-weight: 400;
     span{
         font-weight: bold;
     }
