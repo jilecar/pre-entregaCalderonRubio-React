@@ -17,7 +17,7 @@ function Navbar() {
                 <h1>Almacen <span>Productos</span></h1>
                 <div className={`links ${clicked ? 'active' : ''} `}>
                     <Link to='categoria/Hogar'>Hogar</Link>
-                    <Link to='categoria/Tecnología'>Tecnología</Link>
+                    <Link to='categoria/Tecnologia'>Tecnologia</Link>
                     <Link to='categoria/Oficina'>Oficina</Link>
                     <Link to='categoria/Deportes'>Deportes</Link>
                 </div>
@@ -39,7 +39,7 @@ export default Navbar
 const NavbarContenedor = styled.nav`
 h1{ //estilos titulo
     color: white;
-    font-weight: 400;
+    font-weight: 200;
     span{
         font-weight: bold;
     }

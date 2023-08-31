@@ -1,27 +1,45 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import Card from 'react-bootstrap/Card'
-import Col from 'react-bootstrap/Col'
-import Row from 'react-bootstrap/Row'
-import Button from 'react-bootstrap/Button'
-import Container from 'react-bootstrap/Container'
-import img from 
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import {Card, Col, Row, Button, Container} from 'react-bootstrap'
+import img from '../asset/img/nuevoproducto.png'
 
-function ItemListContainer({greeting}) {
+export default function ItemListContainer() {
   /*almacenar o cargar productos*/
-  const[almacen,setItems]=useState([])
+  const[items,setItems]=useState([])
+
+  const {id}=useParams();
   /*Consulta a la base de datos "json" de los productos del almacen */
+
+  useEffect(() => {
   const getProductos=async()=>{
-    const consulta=await fetch()
-    const productos=await consulta.json
-    setItems(productos)
+    const consulta=await fetch('/data/productos.json')
+    const productos=await consulta.json();
+    
+    const productosFiltrados=productos.filter(producto=>producto.categoria===id)
+    console.log(productosFiltrados)
+    setItems(productosFiltrados)
   }
+  getProductos();
+  },[id]);
+
   return (
-    <div className="item-list-container">
-      <h3>{greeting}</h3>
-      <p>¡Todo lo que necesita su negocio!</p>
-    </div>
+    <Container fluid className='mt-4'>
+      <Row>
+        {items.map(item=>(
+            <Col key={item.id} lg={4} className='mb-4'>
+              <Card>
+                <Card.Img variant='top' src={img}/>
+                <Card.Body>
+                  <Card.Title>{item.nombre}</Card.Title>
+                  <Card.Text>{item.descripcion}</Card.Text>
+                  <Button variant='dark'>Mas Detalles</Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+      </Row>
+    </Container>
   );
 }
 
-export default ItemListContainer;
+/*export default ItemListContainer;*/

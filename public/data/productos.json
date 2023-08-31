@@ -1,3 +1,4 @@
+
 [
     {
         "id": 1,
@@ -20,7 +21,7 @@
         "nombre": "Apple Macbook Air",
         "precio": 4030000,
         "imagen": "applemacbookair.webp",
-        "categoria": "Tencologia",
+        "categoria": "Tecnologia",
         "descripcion": "13.3 Chip M1 8 Core Cpu 256gb Ssd 8gb Ram Color Silver"
     },
     {
