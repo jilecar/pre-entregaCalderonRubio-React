@@ -22,8 +22,7 @@ function Navbar() {
                     <Link to='categoria/Deportes'>Deportes</Link>
                 </div>
                 <div className='btncarrito'>
-                    <CartWidget />
-                    <span className='etqnumero'>0</span>
+                    <CartWidget/>
                 </div>
                 <div className='btnhamburgesa'>
                     <BotonPaginas clicked={clicked} handleClick={handleClick} />
@@ -40,11 +39,12 @@ const NavbarContenedor = styled.nav`
 .inicio{ //estilos titulo
     color: white;
     font-weight: 400;
+    font-size: 40px;
     span{
         font-weight: bold;
     }
 }
-padding: 4 ram;
+padding: 4 rem;
 background-color: black;
 display: flex;
 align-items: center;
@@ -110,7 +110,7 @@ a{
 }
 
 .etqnumero{
-    font-size: blod;
+    font-weight: blod;
     left: 10px;
     margin-left: 5px;
 }

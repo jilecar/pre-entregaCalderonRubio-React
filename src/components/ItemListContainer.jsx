@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Card, Col, Row, Button, Container } from 'react-bootstrap'
-import img from '../asset/img/nuevoproducto.png'
 
 export default function ItemListContainer() {
   /*almacenar o cargar productos*/
@@ -12,7 +11,7 @@ export default function ItemListContainer() {
 
   useEffect(() => {
     const getProductos = async () => {
-      const consulta = await fetch('/data/productos.json')
+      const consulta = await fetch(`${process.env.PUBLIC_URL}/data/productos.json`)
       const productos = await consulta.json();
 
       const productosFiltrados = productos.filter(producto => producto.categoria === id)
@@ -31,7 +30,7 @@ export default function ItemListContainer() {
         {items.map(item => (
           <Col key={item.id} lg={4} className='mb-4'>
             <Card>
-              <Card.Img variant='top' src={img} />
+              <Card.Img variant='top' src={`${process.env.PUBLIC_URL}${item.imagen}`}/>
               <Card.Body>
                 <Card.Title>{item.nombre}</Card.Title>
                 <Card.Text>{item.descripcion}</Card.Text>
