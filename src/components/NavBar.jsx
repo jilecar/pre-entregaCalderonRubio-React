@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <>
             <NavbarContenedor>
-                <Link to='/'className='inicio'>Almacen <span>Productos</span></Link>
+                <Link to='/' className='inicio'>Almacen <span>Productos</span></Link>
                 <div className={`links ${clicked ? 'active' : ''} `}>
                     <Link to='categoria/Hogar'>Hogar</Link>
                     <Link to='categoria/Tecnologia'>Tecnologia</Link>
@@ -22,7 +22,7 @@ function Navbar() {
                     <Link to='categoria/Deportes'>Deportes</Link>
                 </div>
                 <div className='btncarrito'>
-                    <CartWidget/>
+                    <CartWidget />
                 </div>
                 <div className='btnhamburgesa'>
                     <BotonPaginas clicked={clicked} handleClick={handleClick} />

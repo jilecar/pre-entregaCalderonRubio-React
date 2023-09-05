@@ -30,7 +30,7 @@ export default function ItemListContainer() {
         {items.map(item => (
           <Col key={item.id} lg={4} className='mb-4'>
             <Card>
-              <Card.Img variant='top' src={`${process.env.PUBLIC_URL}${item.imagen}`}/>
+              <Card.Img variant='top' src={`${process.env.PUBLIC_URL}${item.imagen}`} />
               <Card.Body>
                 <Card.Title>{item.nombre}</Card.Title>
                 <Card.Text>{item.descripcion}</Card.Text>

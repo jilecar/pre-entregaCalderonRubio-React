@@ -1,3 +1,5 @@
+/*Botón que se muestra cuando la ventana esta a menos de 760px*/
+
 import React from 'react';
 import styled from 'styled-components'; //Importar libreria de Styled-components 
 

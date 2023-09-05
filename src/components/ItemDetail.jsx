@@ -22,16 +22,16 @@ export default function ItemDetail({ detalle }) {
                                     <ul className="list-unstyled">
                                         <li>
                                             <i className="fa fa-paw fa-lg">
-                                            {detalle.descripcion}
+                                                {detalle.descripcion}
                                             </i>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="text-center">
-                              <ItemCount />  
+                                <ItemCount />
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
