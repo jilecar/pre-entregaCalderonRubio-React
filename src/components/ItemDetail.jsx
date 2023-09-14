@@ -29,14 +29,12 @@ export default function ItemDetail({ detalle }) {
                                 </div>
                             </div>
                             <div className="text-center">
-                                <ItemCount />
+                                <ItemCount/>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     )
 }
