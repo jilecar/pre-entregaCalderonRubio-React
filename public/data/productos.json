@@ -42,7 +42,7 @@
     },
     {
         "id": 6,
-        "nombre": "Kit De Pesas ",
+        "nombre": "Kit De Pesas",
         "precio": 112900,
         "imagen": "/data/img/kitpesas.webp",
         "categoria": "Deportes",
