@@ -1,4 +1,4 @@
-import { Timestamp, writeBatch } from 'firebase/firestore';
+/*import { Timestamp, writeBatch } from 'firebase/firestore';
 import React, { useContext, useState } from 'react';
 
 function FormularioOrden({onConfirm}) {
@@ -6,22 +6,12 @@ function FormularioOrden({onConfirm}) {
   const [telefono, setTelefono] = useState('');
   const [email, setEmail] = useState('');
 
-  const handleNombreChange = (e) => {
-    setNombre(e.target.value);
-  };
-
-  const handleTelefonoChange = (e) => {
-    setTelefono(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Aquí puedes realizar alguna acción con los datos del formulario, como enviarlos a un servidor
-  };
+  const handleConfirm=(event)=>{
+    event.preventDefault()
+    const UserData={
+      nombre, telefono,email}
+      onConfirm(UserData)
+  }
 
   return (
     <div className="formulario-container">
@@ -60,4 +50,4 @@ function FormularioOrden({onConfirm}) {
   );
 }
 
-export default FormularioOrden;
+export default FormularioOrden;*/

@@ -4,6 +4,8 @@ import { Card, Col, Row, Container } from 'react-bootstrap';
 import { db } from '../firebase/cliente';
 import {getDocs, collection, query, where, getDoc,} from 'firebase/firestore';
 
+//pendiente aplicar estilos para mejorar la visulización
+
 export default function ItemListContainer() {
   const [productos, setProductos] = useState([]);
   const [loading, setLoading] = useState(true);

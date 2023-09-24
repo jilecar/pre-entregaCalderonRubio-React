@@ -18,7 +18,7 @@ import FormularioOrden from './FormularioOrden';
     return (
         <div>
           <h1>Realizar Compra</h1>
-          <FormularioOrden onConfirm={crearOrden}/>
+          {/*<FormularioOrden onConfirm={crearOrden}/>*/}
 
            <Button onClick ={crearOrden} variant='dark'>Realizar Compra</Button>
         </div>

@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "./CartContext";
+import carticon from "../asset/carticon.png"; // Importa la imagen del carrito
+
+//Deseo que siempre este visible, aplicando los cambios a medida que el usuario va agregando los productos
 
 export const Cartwidget = () => {
-    const itemCount = 0;//Se deja en 1 para que aparezca junto al carrito 
+    const { getTotal } = useContext(CartContext);
+
     return (
         <div className="cart-widget">
-            <i className="bi bi-cart-plus-fill"></i>
-            {itemCount > 1 && (
-                <span className="badge bg-danger notification-badge">{itemCount}</span>
-            )}
+            <Link to="/cart">
+                <img src={carticon} alt="Carrito" className="icon" />
+                <span className="cantidad">${getTotal()}</span>
+            </Link>
         </div>
-    );
-}
+    )
+};
+
 export default Cartwidget;
