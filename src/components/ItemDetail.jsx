@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types';
 import ItemCount from './ItemCount';
-import {db} from "../firebase/cliente";
-import {getDocs, collection, query, where, limit, getDoc,doc} from 'firebase/firestore'
+import { db } from "../firebase/cliente";
+import { getDocs, collection, query, where, limit, getDoc, doc } from 'firebase/firestore'
 import { Button } from 'react-bootstrap';
 import { CartContext } from './CartContext';
 import { useContext } from 'react';
 
-export default function ItemDetail({detalle}) {
+export default function ItemDetail({ detalle }) {
 
-    const{addToCart} = useContext(CartContext);
-    const onAdd=(cantidad)=> addToCart(detalle, cantidad)
+    const { addToCart } = useContext(CartContext);
+    const onAdd = (cantidad) => addToCart(detalle, cantidad)
 
     return (
         <div className="d-flex justify-content-center adjust-item-center my-5">
@@ -37,7 +37,7 @@ export default function ItemDetail({detalle}) {
                                 </div>
                             </div>
                             <div className="text-center">
-                                <ItemCount onAdd={onAdd}/>
+                                <ItemCount onAdd={onAdd} />
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Card, Col, Row, Container } from 'react-bootstrap';
 import { db } from '../firebase/cliente';
-import {getDocs, collection, query, where, getDoc,} from 'firebase/firestore';
+import { getDocs, collection, query, where, getDoc, } from 'firebase/firestore';
 
 //pendiente aplicar estilos para mejorar la visulización
 

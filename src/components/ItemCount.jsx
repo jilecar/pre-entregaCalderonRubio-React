@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 
-function ItemCount({onAdd}) {
+function ItemCount({ onAdd }) {
     // almacenar la cantidad seleccionada
     const [cantidad, setCantidad] = useState(1);
 
@@ -23,8 +23,8 @@ function ItemCount({onAdd}) {
             <span className="mx-2">{cantidad}</span>
             <button onClick={agregarCantidad} className="btn btn-primary">+</button>
             <div>
-            <Button onClick ={()=>onAdd(cantidad)} variant='dark'>Agregar al Carrito</Button>
-        </div>
+                <Button onClick={() => onAdd(cantidad)} variant='dark'>Agregar al Carrito</Button>
+            </div>
         </div>
 
     );

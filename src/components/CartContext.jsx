@@ -42,23 +42,23 @@ export const CartProvider = ({ defaultValue = [], children }) => {
     }
 
     //Quitar del carrito
-    const quitarCart=(id)=>{
-        const newCart=[...cart].filter(item=>item.detalle.id!==id)
+    const quitarCart = (id) => {
+        const newCart = [...cart].filter(item => item.detalle.id !== id)
         setCart(newCart)
     }
 
     //Obtener la cantidad de elementos a comprar
-    const getCantidad=()=>{
-        let cantidad=0
-        cart.forEach((item)=>cantidad=cantidad+item.cantidad)
+    const getCantidad = () => {
+        let cantidad = 0
+        cart.forEach((item) => cantidad = cantidad + item.cantidad)
         return cantidad
     }
 
     //Obtner el total costo
-    const getTotal=()=>{
-        let total=0
-        cart.forEach((item)=>{
-            total=total+(item.cantidad*item.detalle.precio)
+    const getTotal = () => {
+        let total = 0
+        cart.forEach((item) => {
+            total = total + (item.cantidad * item.detalle.precio)
         })
         return total
     }

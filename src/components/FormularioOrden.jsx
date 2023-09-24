@@ -1,17 +1,31 @@
-/*import { Timestamp, writeBatch } from 'firebase/firestore';
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 
-function FormularioOrden({onConfirm}) {
+function Formulario({ onSubmit }) {
   const [nombre, setNombre] = useState('');
   const [telefono, setTelefono] = useState('');
   const [email, setEmail] = useState('');
 
-  const handleConfirm=(event)=>{
-    event.preventDefault()
-    const UserData={
-      nombre, telefono,email}
-      onConfirm(UserData)
-  }
+  const handleNombreChange = (e) => {
+    setNombre(e.target.value);
+  };
+
+  const handleTelefonoChange = (e) => {
+    setTelefono(e.target.value);
+  };
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = {
+      nombre,
+      telefono,
+      email,
+    };
+    onSubmit(formData); // Llama a la función onSubmit y pasa los datos del formulario
+  };
 
   return (
     <div className="formulario-container">
@@ -50,4 +64,4 @@ function FormularioOrden({onConfirm}) {
   );
 }
 
-export default FormularioOrden;*/
+export default Formulario;
